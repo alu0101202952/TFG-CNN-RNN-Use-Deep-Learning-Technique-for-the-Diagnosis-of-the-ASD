@@ -15,9 +15,18 @@
 
 -------------------------------------------------------------------------
 
-#### Orden de ejecución del programa:
-1. Ejecutar fichero "**analisisEstadistico**": (Contiene el análisis y visualización de los datos a modo estadístico)
-2. Ejecutar fichero "**borrarAll**": (Contiene una función para borrar la carpeta All y evitar hacerlo de forma manual)
-3. Ejecutar fichero "**entrenamiento**": (Contiene el entrenamiento con ambos modelos: CNN y LSTM)
-4. Ejecutar fichero "**limpiarCodificar**": (Contiene la función de limpieza y codificación de los datos antes de pasarlos al análisis, clasificar y entrenar)
-5. Ejecutar fichero "**clasificarDatos**": (Contiene la función que crea los datasets que serán para la parte de entrenamiento y de prueba, funciona pero se pretende que en un futuro sea una aplicación nativa que funcione como [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) de la librería scikit-learn)
+#### Ficheros añadidos:
+- Cuaderno completo (.ipynb), dentro de la carpeta **Cuaderno**, con todos los ficheros.
+- Ficheros de cada función por separado
+  - "**analisisEstadistico**": (Contiene el análisis y visualización de los datos a modo estadístico)
+  - "**borrarAll**": (Contiene una función para borrar la carpeta All y evitar hacerlo de forma manual)
+  - "**entrenamiento**": (Contiene el entrenamiento con ambos modelos: CNN y LSTM)
+  - "**limpiarCodificar**": (Contiene la función de limpieza y codificación de los datos antes de pasarlos al análisis, clasificar y entrenar)
+  - "**clasificarDatos**": (Contiene la función que crea los datasets que serán para la parte de entrenamiento y de prueba, funciona pero se pretende que en un futuro sea una aplicación nativa que funcione como [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) de la librería scikit-learn)
+
+#### Orden de ejecución del programa, ficheros por separado:
+1. Ejecutar fichero "**analisisEstadistico**"
+2. Ejecutar fichero "**borrarAll**"
+3. Ejecutar fichero "**entrenamiento**"
+4. Ejecutar fichero "**limpiarCodificar**"
+5. Ejecutar fichero "**clasificarDatos**"
