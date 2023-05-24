@@ -15,7 +15,7 @@
 
 -------------------------------------------------------------------------
 
-#### Ficheros añadidos:
+#### Ficheros añadidos al github:
 - Cuaderno completo (.ipynb), dentro de la carpeta **Cuaderno**, con todos los ficheros.
 - Ficheros de cada función por separado
   - "**analisisEstadistico**": (Contiene el análisis y visualización de los datos a modo estadístico)
