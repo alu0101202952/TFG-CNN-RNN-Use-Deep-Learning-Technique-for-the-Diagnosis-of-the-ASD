@@ -15,6 +15,8 @@
 
 -------------------------------------------------------------------------
 
+### ESTRUCTURA DEL GITHUB
+
 #### Contenido del cuaderno añadido al github:
 - Cuaderno completo (.ipynb), dentro de la carpeta **Cuaderno**, con las funciones:
   - "**analisisEstadistico()**": (Contiene el análisis y visualización de los datos a modo estadístico)
@@ -22,6 +24,10 @@
   - "**entrenamiento()**": (Contiene el entrenamiento con ambos modelos: CNN y LSTM)
   - "**limpiarCodificar()**": (Contiene la función de limpieza y codificación de los datos antes de pasarlos al análisis, clasificar y entrenar)
   - "**clasificarDatos()**": (Contiene la función que crea los datasets que serán para la parte de entrenamiento y de prueba, funciona pero se pretende que en un futuro sea una aplicación nativa que funcione como [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) de la librería scikit-learn)
+
+-------------------------------------------------------------------------
+
+### EJECUCIÓN
 
 #### Primera vez de ejecución del programa:
 1. Ejecutar parte "**analisisEstadistico**"
