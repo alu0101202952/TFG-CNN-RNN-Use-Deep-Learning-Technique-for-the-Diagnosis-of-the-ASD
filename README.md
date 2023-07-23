@@ -21,6 +21,10 @@
 - Cuaderno completo (.ipynb), dentro de la carpeta **Cuaderno**, con las funciones:
   - "**analisisEstadistico()**": (Contiene el análisis y visualización de los datos a modo estadístico)
   - "**borrarAll()**": (Contiene una función para borrar la carpeta All y evitar hacerlo de forma manual)
+  - "**crearrAll()**": (Contiene una función para crear la carpeta All y evitar hacerlo de forma manual)
+  - "**tratamientoDatos()**": (Contiene una función para separar los datos X de los Y y realizar el protocolo de ventana deslizante)
+  - "**dividirSecuencias()**": (Contiene una función para realizar el algoritmo de organización de ventana deslizante y sacar la X e Y con la que se concatenará de cada fichero para su posterior entrenamiento)
+  - "**OneHotEncoderFunction()**": (Contiene la codificación que se aplicará con el método One-Hot Encoding a la columna Y (TEA, no TEA))
   - "**entrenamiento()**": (Contiene el entrenamiento con ambos modelos: CNN y LSTM)
   - "**limpiarCodificar()**": (Contiene la función de limpieza y codificación de los datos antes de pasarlos al análisis, clasificar y entrenar)
   - "**clasificarDatos()**": (Contiene la función que crea los datasets que serán para la parte de entrenamiento y de prueba, funciona pero se pretende que en un futuro sea una aplicación nativa que funcione como [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) de la librería scikit-learn)
@@ -32,13 +36,16 @@
 #### Primera vez de ejecución del programa:
 1. Ejecutar parte "**analisisEstadistico**"
 2. Ejecutar parte "**borrarAll**"
-3. Ejecutar parte "**entrenamiento**"
-4. Ejecutar parte "**limpiarCodificar**"
-5. Ejecutar parte "**clasificarDatos**"
+3. Ejecutar parte "**crearAll**"
+4. Ejecutar parte "**dividirSecuencias** y **tratamientoDatos**"
+5. Ejecutar parte "**OneHotEncoderFunction**
+6. Ejecutar parte "**limpiarCodificar**"
+7. Ejecutar parte "**entrenamiento**"
+8. Ejecutar parte "**clasificarDatos**"
 
-#### Siguientes veces de ejecución del programa: Si se ejecutó ya por primera vez y se quiere cambiar la parametrización del entrenamiento(es decir, el optimizador: adam,nadam,adamax, el tipo de función de pérdida: mse,mae, o se quiere cambiar otro valor por ejemplo del tamaño del lote), su ejecución es la siguiente gracias al menú que se ejecuta tras llamar a la función **clasificarDatos()**:
+#### Siguientes veces de ejecución del programa: Si se ejecutó ya por primera vez y se quiere cambiar la parametrización del entrenamiento(es decir, el optimizador: adam,nadam,adamax, el tipo de función de pérdida: tf.keras.losses.CategoricalCrossentropy(), o se quiere cambiar otro valor por ejemplo del tamaño del lote), su ejecución es la siguiente gracias al menú que se ejecuta tras llamar a la función **clasificarDatos()**:
 1. Se cambian los parámetros en la función "**entrenamiento**"
 2. Ejecutar Ejecutar parte "**entrenamiento**"
 3. Ejecutar parte "**clasificarDatos**"
 
-**NOTA: PARA QUE ESTO SEA POSIBLE ES RECOMENDABLE SALIR SIEMPRE DEL MENÚ, PARA ELLO ELEGIR LA OPCIÓN "0", CON ELLO SALE DEL PROGRAMA Y BORRA LA CARPETA ALL QUE SE CREA Y ALMACENA LOS DATOS SINTETIZADOS DEL ENTRENAMIENTO Y LOS TEST, ESTA OPCIÓN PERMITE LLAMAR A LA FUNCIÓN borrarAll() Y ASÍ NO HACER EL BORRADO A MANO Y PODER EJECUTAR TANTAS VECES COMO SE DESEE EL PROGRAMA**
+**NOTA: PARA QUE ESTO SEA POSIBLE ES RECOMENDABLE SALIR SIEMPRE DEL MENÚ, PARA ELLO ELEGIR LA OPCIÓN "0" SI SE QUIERE BORRAR EL FICHERO DE ENTRENAMIENTO Y "1" SI SE QUIERE MANTENER, CON ELLO SALE DEL PROGRAMA**
